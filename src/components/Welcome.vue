@@ -1,7 +1,7 @@
 <template>
   <div class="welcome">
     <el-card class="box-card">
-      <form class="card-body" v-on:submit="submit">
+      <form class="card-body" @submit.prevent="submit">
         <img src="../assets/logo.png" class="logo card-content">
         <el-input placeholder="Please enter the room name" class="card-content" v-model="room"></el-input>
         <el-button type="primary" class="card-content go" native-type="submit">Go</el-button>
@@ -19,13 +19,12 @@ export default {
     }
   },
   methods: {
-    submit: function (ev) {
+    submit: function () {
       if (/[^A-Za-z0-9_]/.test(this.room)) { // conforms Vue's parameter regexp: https://github.com/pillarjs/path-to-regexp#parameters
         this.$message.error('Room name can contain only alphanumeric + underscore!')
       } else {
         this.$router.push(this.room)
       }
-      ev.preventDefault()
     }
   }
 }
@@ -34,9 +33,9 @@ export default {
 <style scoped>
 .welcome {
   display: flex;
-  flex-direction: column; /* 子要素をflexboxにより縦方向に揃える */
-  justify-content: center; /* 子要素をflexboxにより中央に配置する */
-  align-items: center;  /* 子要素をflexboxにより中央に配置する */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100%;
 }
 .card-content {
