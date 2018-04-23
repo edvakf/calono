@@ -15,6 +15,7 @@
 import Vue from 'vue'
 import Peer from 'skyway-js'
 import SmallVideo from '@/components/SmallVideo'
+import Config from '@/config.js'
 
 export default {
   name: 'Room',
@@ -37,7 +38,7 @@ export default {
         this.$refs.video.srcObject = stream
         this.localStream = stream
 
-        this.peer = new Peer({key: 'apikey', debug: 3})
+        this.peer = new Peer({key: Config.SKYWAY_API_KEY, debug: 3})
 
         // successfully connected to a signaling server
         this.peer.on('open', id => {
