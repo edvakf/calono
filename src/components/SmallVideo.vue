@@ -5,9 +5,12 @@
 <script>
 export default {
   name: 'SmallVideo',
-  props: ['stream'],
+  props: ['stream', 'isLocal'],
   mounted () {
     this.$refs.video.srcObject = this.stream
+    if (this.isLocal) {
+      this.$refs.video.muted = true
+    }
   },
   data () {
     return {
