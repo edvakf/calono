@@ -2,7 +2,7 @@
   <div class="welcome">
     <el-card class="box-card">
       <form class="card-body" @submit.prevent="submit">
-        <img src="../assets/logo.png" class="logo card-content">
+        <img src="../assets/logo.svg" class="logo card-content">
         <el-input placeholder="Please enter the room name" class="card-content" v-model="room"></el-input>
         <el-button type="primary" class="card-content go" native-type="submit">Go</el-button>
       </form>

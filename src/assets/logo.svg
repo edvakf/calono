@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="842px" height="224px" viewBox="0 0 842 224" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>calono</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="calono" transform="translate(2.000000, 2.000000)">
+            <g id="calono-icon">
+                <circle id="outer-circle" stroke="#4A90E2" stroke-width="4" cx="110" cy="110" r="110"></circle>
+                <path d="M172.183289,57.2704233 C162.065645,50.1658186 149.765451,46 136.5,46 C101.982203,46 74,74.2060608 74,109 C74,143.793939 101.982203,172 136.5,172 C150.617441,172 163.641653,167.281888 174.10541,159.324629 C159.29072,178.593296 136.085341,191 110,191 C65.2649353,191 29,154.511207 29,109.5 C29,64.4887929 65.2649353,28 110,28 C134.983327,28 157.324887,39.3805668 172.183289,57.2704233 Z" id="Combined-Shape" fill="#4A90E2"></path>
+            </g>
+            <text id="Calono" font-family="PTSans-Caption, PT Sans Caption" font-size="180" font-weight="normal" fill="#4A90E2">
+                <tspan x="231" y="170">Calono</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
